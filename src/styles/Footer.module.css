@@ -1,82 +1,70 @@
-/* footer {
-    background-color: #333;
-    color: #fff;
-    padding: 40px 20px;
-    text-align: center;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }   */
-  
-  .social_media, .conta_info, .subscribe, .useful_links{
-    margin-bottom: 20px;
-  }
+/* styles/footer.module.css */
 
-  .social_media h3,
-  .contact_info h3,
-  .subscribe h3,
-  .useful_links h3,
-  .copyright p {
-    margin-bottom: 20px;
-    color: #ffd700; 
-  }
+/* Estilo general del footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
 
-  /* ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin-bottom: 10px;
-  }
-  
-  a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s ease-in-out;
-  }
-   */
-  a:hover {
-    color: #ffd700; 
-    text-decoration: none;
-  } */
-  
-  .subscribe form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .subscribe input {
-    padding: 10px;
-    width: 250px;
-    margin-right: 10px;
-    border: 1px solid #fff;
-    border-radius: 5px;
-  }
-  
-  .subscribe button {
-    background-color: #ffd700;
-    color: #333;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-  }
-  
-  .subscribe button:hover {
-    background-color: #333;
-    color: #ffd700;
-  }
-  
-  .useful_links ul {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .useful_links li {
-    margin: 0 15px;
-  }
-  
+/* Estilo de las secciones del footer */
+.social_media, .contact_info, .subscribe, .useful_links {
+  flex: 1;
+  margin-right: 20px;
+}
+
+/* Estilo de las listas y enlaces */
+.ul {
+  list-style: none;
+  padding: 0;
+}
+
+.li {
+  margin-bottom: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+/* Efecto hover para los enlaces */
+.a:hover {
+  color: #4CAF50;
+}
+
+/* Estilo del formulario de suscripción */
+.form {
+  display: flex;
+  margin-top: 10px;
+}
+
+.input {
+  padding: 8px;
+  margin-right: 10px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  width: 200px;
+}
+
+.button {
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+/* Efecto hover para el botón */
+.button:hover {
+  background-color: #fff;
+  color: #4CAF50;
+}
