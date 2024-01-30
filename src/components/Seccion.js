@@ -6,7 +6,7 @@ const Seccion = () => {
     return (
         <>
         <section>
-            <h2>¿Por que elegir 'nombre de la empresa'?</h2>
+            <h2>¿Por que elegir nombre de la empresa?</h2>
             <p>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
             Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
