@@ -6,6 +6,9 @@ import styles from '@/styles/Home.module.css'
 import Section from '@/components/cards/Section'
 import Seccion from "../Components/Seccion";
 import Link from 'next/link';
+import Layout from '@/components/layout'
+import Header from '@/components/Header'
+
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,13 +17,13 @@ export default function Home() {
     <>
       <Head>
         <title>Seven Indumentaria</title>
-        <meta name="author" content= "Guaspari Elisa" />
-        <meta name="keywords" content= "hoppy, beers" />
+        <meta name="author" content="Guaspari Elisa" />
+        <meta name="keywords" content="hoppy, beers" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
-      <h1>Seven Indumentaria</h1>
-      <Link href='/about'>About</Link>
+      <Header />      {/* <Link href='/about'>About</Link> */}
       <main className={`${styles.main} ${inter.className}`}>
+        <Layout />
         <Section />
       </main>
     </>

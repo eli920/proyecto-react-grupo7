@@ -113,7 +113,7 @@
     background: rgba(var(--card-rgb), 0.1);
     border: 1px solid rgba(var(--card-border-rgb), 0.15);
   }
-
+  
   .card:hover span {
     transform: translateX(4px);
   }
@@ -130,39 +130,39 @@
   .content {
     padding: 4rem;
   }
-
+  
   .grid {
     grid-template-columns: 1fr;
     margin-bottom: 120px;
     max-width: 320px;
     text-align: center;
   }
-
+  
   .card {
     padding: 1rem 2.5rem;
   }
-
+  
   .card h2 {
     margin-bottom: 0.5rem;
   }
-
+  
   .center {
     padding: 8rem 0 6rem;
   }
-
+  
   .center::before {
     transform: none;
     height: 300px;
   }
-
+  
   .description {
     font-size: 0.8rem;
   }
-
+  
   .description a {
     padding: 1rem;
   }
-
+  
   .description p,
   .description div {
     display: flex;
@@ -170,7 +170,7 @@
     position: fixed;
     width: 100%;
   }
-
+  
   .description p {
     align-items: center;
     inset: 0 0 auto;
@@ -179,14 +179,14 @@
     border: none;
     border-bottom: 1px solid rgba(var(--callout-border-rgb), 0.25);
     background: linear-gradient(
-      to bottom,
-      rgba(var(--background-start-rgb), 1),
-      rgba(var(--callout-rgb), 0.5)
+    to bottom,
+    rgba(var(--background-start-rgb), 1),
+    rgba(var(--callout-rgb), 0.5)
     );
     background-clip: padding-box;
     backdrop-filter: blur(24px);
   }
-
+  
   .description div {
     align-items: flex-end;
     pointer-events: none;
@@ -194,9 +194,9 @@
     padding: 2rem;
     height: 200px;
     background: linear-gradient(
-      to bottom,
-      transparent 0%,
-      rgb(var(--background-end-rgb)) 40%
+    to bottom,
+    transparent 0%,
+    rgb(var(--background-end-rgb)) 40%
     );
     z-index: 1;
   }
@@ -213,7 +213,7 @@
   .vercelLogo {
     filter: invert(1);
   }
-
+  
   .logo {
     filter: invert(1) drop-shadow(0 0 0.3rem #ffffff70);
   }
@@ -226,4 +226,10 @@
   to {
     transform: rotate(0deg);
   }
+}
+
+.container{
+  margin: 60px;
+  max-width: 960px;
+  padding: 0 30px;
 }
