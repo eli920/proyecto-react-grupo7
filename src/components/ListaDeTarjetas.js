@@ -1,5 +1,5 @@
-import React from 'react'
-import Tarjeta from "./Tarjeta"
+import React from 'react';
+import Tarjeta from "./Tarjeta";
 
 const descripcion = [
     {

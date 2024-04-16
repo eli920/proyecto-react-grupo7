@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import style from '../styles/tarjetas.module.css';
 
 const Tarjeta = ({descripcion}) => {
 
@@ -7,43 +8,15 @@ const Tarjeta = ({descripcion}) => {
 
     return (
         <>
-        <figure>
-            <img src={image} alt={text} />
-            <div>
-                <h2>{title}</h2>
-                <figcaption>{text}</figcaption>
+        <section className={style.section}>
+        <figure className={style.figure}>
+            <img className={style.image} src={style.image} alt={style.text} />
+            <div className={style.div}>
+                <h2 className={style.h2}>{title}</h2>
+                <figcaption className={style.figcaption}>{text}</figcaption>
             </div>
         </figure>
-
-            <style jsx>{`
-                figure {
-                    width: 200px;
-                    height: 400px;
-                    border: 2px solid black;
-                }
-                img {
-                    width: 100%;
-                    height:50%;
-                    object-fit: cover;
-                }
-                div {
-                    width: 90%;
-                    margin: 0 auto;
-                    padding: 10px;
-                    display: flex;
-                    flex-direction: column;
-                    allign-items: center;
-                }
-                h2 {
-                    text-align: center;
-                    padding: 0 0 5px 0;
-                    font-size: 1.2rem;
-                }
-                figcaption {
-                    text-align: center;
-                    font-size: .85rem;
-                }
-            `}</style>
+        </section>
         </>
     )
 }

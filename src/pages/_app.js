@@ -2,9 +2,7 @@ import React from 'react';
 import '@/styles/globals.css';
 import Footer from '../components/Footer';
 
-
-
-function MyApp({ Component, pageProps }) {
+function MyApp({ Component, pageProps}) {
   return (
     <div>
       {/* Contenido de la aplicación, como el encabezado, el contenido principal, etc. */}
